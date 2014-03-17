@@ -1,1 +1,1 @@
-makepbo -U -P ctb_ruck ..\src\ .\ctb_ruck.pbo
+makepbo -U -P ctb_vehicleid_plate ..\src\ .\ctb_vehicleid_plate.pbo
