@@ -28,7 +28,7 @@ class cfgVehicles
 		displayName= "CTB Vehicle ID Plate (Tank)";
 		destrType= "DestructNo";	// Not destructable...might be an issue - need to test that out.
 		model= "ctb_vehicleid_plate\ctb_vehicle_idplate_tank.p3d";
-		hiddenSelections[]= {"v_id0", "v_id1", "v_id2"};
-		hiddenSelectionsTextures[]= {"ctb_vehicleid_plate\data\letters\a_ca.paa", "ctb_vehicleid_plate\data\letters\b_ca.paa", "ctb_vehicleid_plate\data\letters\c_ca.paa"};
+		hiddenSelections[]= {"v_id0", "v_id1", "v_id2", "v_id_plate"};
+		hiddenSelectionsTextures[]= {"ctb_vehicleid_plate\data\letters\2_ca.paa", "ctb_vehicleid_plate\data\letters\1_ca.paa", "ctb_vehicleid_plate\data\letters\b_ca.paa", "#(argb,8,8,3)color(0.015,0.012,0.010,1.0,co)"};
 	};
 };
