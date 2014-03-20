@@ -30,6 +30,9 @@ class cfgVehicles
 		model= "ctb_vehicleid_plate\ctb_vehicle_idplate_tank.p3d";
 		hiddenSelections[]= {"v_id0", "v_id1", "v_id2", "v_id_plate"};
 		hiddenSelectionsTextures[]= {"ctb_vehicleid_plate\data\letters\2_ca.paa", "ctb_vehicleid_plate\data\letters\1_ca.paa", "ctb_vehicleid_plate\data\letters\b_ca.paa", "#(argb,8,8,3)color(0.015,0.012,0.010,1.0,co)"};
+
+		// Event handlers.
+		// init= "[(_this select 0)] exec ""ctb_vehicleid_plate\""";
 	};
 	class ctb_vehicle_csplate_tank_e: Land_Noticeboard_F
 	{
@@ -49,5 +52,5 @@ class cfgVehicles
 		displayName= "CTB Vehicle Callsign Plate (Tank Odd)";
 		hiddenSelections[]= {"o0","o1","o2","o3","o4","o5","o6","o7","o8"};
 		hiddenSelectionsTextures[]= {"ctb_vehicleid_plate\data\letters\o_ca.paa", "ctb_vehicleid_plate\data\letters\d_ca.paa", "ctb_vehicleid_plate\data\letters\d_ca.paa"};
-	}
+	};
 };
