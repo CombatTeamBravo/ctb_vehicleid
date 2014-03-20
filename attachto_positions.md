@@ -45,7 +45,7 @@ ctb_vehicleid attachto positions
 
 <p>
 	<b>FV-720 Mora</b>
-	<br />namePlate attachTo [mora,[-1.1,-3.869,-0.775], "trup"]; namePlate setVectorDirAndUp [[0,0.5,0],[0,0.5,0.5]];
+	<br />namePlate attachTo [mora,[-1.1,-3.871,-0.775], "trup"]; namePlate setVectorDirAndUp [[0,0.5,0],[0,0.5,0.5]];
 	<br /><a href="http://i.imgur.com/NSid4Bz.png" target="_blank"><img src="http://i.imgur.com/NSid4Bz.png" title="FV-720 Mora Plate Position" width="50%" height="50%" /></a>
 </p>
 
