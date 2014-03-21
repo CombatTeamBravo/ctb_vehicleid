@@ -1,0 +1,1 @@
+Just a dump from the ingame GUI Builder.
