@@ -28,15 +28,16 @@ _plateText= [_this, 1, ""] call BIS_fnc_param;	// If empty, we go with the rando
 if !(_vehicle== objNull) then {
 
 	private ["_posOffset", "_memPnt", "_vectorDir"];
+	_posOffset= [];	// Empty array - we'll check this later to see if it's been modified, to know if the vehicle is eligible.
 
 	// Does the vehicle already have an ID Plate - TODO wait for the attachList function coming in A3.
 	// eligible vehicle?
 	{
 		if (_vehicle isKindOf (_x select 0)) exitWith
 		{
-			_posOffset= (_x select 2);
-			_memPnt= (_x select 3);
-			_vectorDir= (_x select 4);		
+			_posOffset= (_x select 1);
+			_memPnt= (_x select 2);
+			_vectorDir= (_x select 3);		
 		};
 	} forEach _supportedVehicles;
 
