@@ -48,7 +48,11 @@ if !(_vehicle== objNull) then {
 		private ["_newIDPlate"];
 		_newIDPlate= "ctb_vehicle_idplate_tank" createVehicle [0,0,0];
 		
-		_newIDPlate addAction ["Set ID Text", "[_this select 0] call ctb_fnc_idPlateTextDialog;"];
+		// used to add action to the plate...but this didn't seem to always work, depending on plate position.
+		//_newIDPlate addAction ["Set ID Text", "[_this select 0] call ctb_fnc_idPlateTextDialog;"];
+		// So now it's based on if the player is the driver or commander only...
+		_vehicle addAction ["Set ID Text","[_this select 3] call ctb_fnc_idPlateTextDialog;", _newIDPlate, 0, false, true, 
+		  "", "(driver _target==player||commander _target==player)"];
 		
 		_newIDPlate attachTo [_vehicle, _posOffset, _memPnt];
 		_newIDPlate setVectorDirAndUp _vectorDir;
